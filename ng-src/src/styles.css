@@ -1,0 +1,173 @@
+/* Mobile first */
+ul, ol, li {
+  list-style-type: none;
+}
+
+/* Base structure styling */
+.main-container {
+  display: block;
+  width: 100%;
+  overflow-x: hidden;
+}
+  .top-section {
+    display: block;
+    background: #000;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin-top: -50px;
+    padding: 25px 0;
+    position: relative; /* to position the borders */
+  }
+    .container {
+      width: 100%;
+      height: auto;
+    }
+
+/* Colours */
+.charcoal {
+  background: #1e1e1e;
+}
+.pale {
+  background: #fafafa;
+}
+.yellow {
+  background: #e4ff00;
+}
+
+/* UI elements */
+/* Text border UI styles */
+.content-border {
+  display: block;
+  width: 45px;
+  border-top: 1px solid;
+  margin: 15px 0;
+}
+.border-right {
+  float: right;
+}
+.border-char {
+  border-color: #1e1e1e;
+}
+.border-white {
+  border-color: #f9f9f9;
+}
+.border-yellow {
+  border-color: #e4ff00;
+}
+
+
+
+/* Typography */
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #444;
+  line-height: 2.4rem;
+}
+.quote {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 3.2rem;
+  font-style: italic;
+  font-weight: lighter;
+  line-height: 3.2rem;
+  word-wrap: break-word;
+}
+.quote:before {
+  padding-right: 10px;
+}
+.quote:before, .quote:after {
+  content: '"';
+  font-family: Arial;
+  font-size: 8rem;
+  line-height: 0;
+  margin-left: -5px;
+  vertical-align: bottom;
+}
+.heading {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: lighter;
+  color: #e4ff00;
+}
+.section-heading h2 {
+  line-height: 0;
+  margin: -4px auto 0;
+  background-color: #fff;
+  height: 25px;
+  width: 150px;
+}
+.section-heading {
+  display: block;
+  clear: both;
+  text-align: center;
+  margin-top: 50px;
+  border-top: 1px solid #444;
+}
+
+/* Text colours */
+.text-yellow {
+  color: #e4ff00;
+}
+.text-white {
+  color: #f9f9f9;
+}
+
+/* Custom button styling */
+.zk-btn {
+  display: block;
+  max-width: 250px;
+  height: 35px;
+  line-height: 0;
+  border-radius: 0;
+  padding: 5%;
+  text-transform: none;
+  border: 1px solid;
+  text-align: center;
+  margin: auto;
+}
+.zk-btn-prim {
+  background: none;
+  color: #444;
+  transition: background .4s ease-in-out, color .4s ease-in-out;
+  -webkit-transition: background .4s ease-in-out, color .4s ease-in-out;
+  -moz-transition: background .4s ease-in-out, color .4s ease-in-out;
+}
+
+.zk-btn-prim:hover {
+  background: #444;
+  color: #fff;
+}
+
+/* =============================
+   Media queries
+   Large mobile and small tablet
+   screens.
+   489px - 767px
+   -------------------------- */
+@media screen and (min-width: 489px) {
+
+}
+
+/* 768px - 987px */
+@media screen and (min-width: 768px) {
+  /* Base structure styling */
+  .main-container {
+    padding-left: 75px;
+  }
+  .section {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 988px) {
+
+}

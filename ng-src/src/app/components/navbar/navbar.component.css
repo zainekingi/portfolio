@@ -1,0 +1,65 @@
+nav {
+  border-radius: 0;
+  background: #000;
+  border: none;
+  text-transform: none;
+  text-align: right;
+  color: #e4ff00;
+}
+.navbar-toggle:hover {
+  background: #000;
+}
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-brand img {
+  height: 45px;
+  margin-top: -10px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  float: right;
+  clear: both;
+  background-color: #e4ff00;
+}
+.navbar .nav > li > a {
+  text-transform: none;
+  text-align: right;
+  color: #e4ff00;
+  font-size: 1.5rem;
+}
+
+/* Media queries - 768px up */
+@media screen and (min-width: 768px) {
+  nav.navbar {
+    position: fixed;
+    height: 100%;
+    z-index: 100;
+    width: 75px;
+    background: #1e1e1e;
+  }
+  .navbar-header {
+    height: 100%;
+  }
+  .navbar-header > button {
+    display: block;
+    position: absolute;
+    top: 50%;
+  }
+  .navbar-header > button .icon-bar {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+  .navbardiv.collapse .in {
+    display: block;
+    background: #1e1e1e;
+    height: 100%;
+    width: 150px;
+  }
+  .navbar-nav {
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+  }
+}

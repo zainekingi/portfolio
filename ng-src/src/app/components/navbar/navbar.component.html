@@ -1,0 +1,41 @@
+<nav class = "navbar navbar-default">
+  <div class = "container">
+    <div class = "navbar-header">
+      <button type = "button" class = "navbar-toggle collapsed" data-toggle = "collapse" data-target = "#navbar" aria-expanded = "false" aria-controls = "navbar">
+        <span class = "sr-only">Toggle navigation</span>
+        <span class = "icon-bar"></span>
+        <span class = "icon-bar"></span>
+      </button>
+      <a class = "navbar-brand" [routerLink] = "['/']"><img src="../../../assets/imgs/zk-logo/zk-logo.png" srcset="../../../assets/imgs/zk-logo/zk-logo.png 1x, ../../../assets/imgs/zk-logo/zk-logo@2x.png 2x, ../../../assets/imgs/zk-logo/zk-logo@3x.png 3x" alt="ZK Design" title="ZK Design"></a>
+    </div>
+    <div id = "navbar" class = "collapse">
+      <ul class = "nav navbar-nav navbar-right">
+        <li [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink] = "['/']" id="home-link">Start here.</a></li>
+        <li [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink] = "['/about']">About me.</a></li>
+        <li [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink] = "['/work']">Work.</a></li>
+        <li [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink] = "['/contact']">Contact me.</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<!--<nav class = "navbar navbar-default">
+  <div class = "container">
+    <div class = "navbar-header">
+      <button type = "button" class = "navbar-toggle collapsed" data-toggle = "collapse" data-target = "#navbar" aria-expanded = "false" aria-controls = "navbar">
+        <span class = "sr-only">Toggle navigation</span>
+        <span class = "icon-bar"></span>
+        <span class = "icon-bar"></span>
+      </button>
+      <a class = "navbar-brand" [routerLink] = "['/']"><img src="../../../assets/imgs/zk-logo/zk-logo.png" srcset="../../../assets/imgs/zk-logo/zk-logo.png 1x, ../../../assets/imgs/zk-logo/zk-logo@2x.png 2x, ../../../assets/imgs/zk-logo/zk-logo@3x.png 3x" alt="ZK Design" title="ZK Design"></a>
+    </div>
+    <div id = "navbar" class = "collapse navbar-collapse">
+      <ul class = "nav navbar-nav navbar-right">
+        <li [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink] = "['/']" id="home-link">Start here.</a></li>
+        <li [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink] = "['/about']">About me.</a></li>
+        <li [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink] = "['/work']">Work.</a></li>
+        <li [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink] = "['/contact']">Contact me.</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>-->
