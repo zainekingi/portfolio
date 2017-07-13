@@ -7,10 +7,20 @@ footer {
   text-align: center;
   color: #1e1e1e;
 }
-footer a {
-  margin-right: 10%;
+footer span {
+  width: 70%;
+  margin: 30px auto 15px;
+}
+footer span a {
+  margin-right: 15%;
+}
+footer span a:nth-of-type(4) {
+  margin-right: 0;
 }
 footer img {
   height: 25px;
+}
+footer div {
+  margin-top: 15px;
 }
 

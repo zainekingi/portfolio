@@ -1,65 +1,173 @@
+/* =======================================================
+    FILE:   NAVBAR.COMPONENT.CSS
+    AUTHOR: Zaine Kingi
+    VER:    1.0
+    DATE:   13-7-17
+    DESC:   Navbar component stylesheet for the application.
+    ......................................................
+            CHANGE LOG
+    ------------------------------------------------------
+    DATE:   VER:    CHANGES:
+    ------------------------------------------------------
+    13-7-17 1.0     Initial release.
+    ---------------------------------------------------- */
+
+/* Mobile first styling */
+
+/* Base styling */
 nav {
-  border-radius: 0;
+  display: block;
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  height: 40px;
+  padding: 5px 10px;
+  margin: 0;
   background: #000;
+}
+.navbar-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  height: 40px;
+  width: 100%;
+  margin: 0;
   border: none;
-  text-transform: none;
-  text-align: right;
-  color: #e4ff00;
 }
-.navbar-toggle:hover {
-  background: #000;
+.nav-logo {
+  display: block;
+  height: 40px;
+  padding-top: 5px;
 }
-.navbar {
-  margin-bottom: 0;
+.ham {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  transition: background .2s ease-in-out;
+  -webkit-transition: background .2s ease-in-out;
+  -moz-transition: background .2s ease-in-out;
+  -o-transition: background .2s ease-in-out;
 }
-.navbar-brand img {
-  height: 45px;
-  margin-top: -10px;
+.ham:hover {
+  background: #1e1e1e;
 }
-.navbar-default .navbar-toggle .icon-bar {
-  float: right;
-  clear: both;
-  background-color: #e4ff00;
-}
-.navbar .nav > li > a {
-  text-transform: none;
-  text-align: right;
-  color: #e4ff00;
-  font-size: 1.5rem;
+.navbar-icon {
+  display: block;
+  width: 25px;
+  border-top: 3px solid yellow;
+  margin: 5px 0;
+  border-radius: 5px;
 }
 
-/* Media queries - 768px up */
+/* Navbar links */
+.nav {
+  background: #000000;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: -1000;
+  padding: 0;
+  margin: 0;
+}
+.nav-items {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  text-align: right;
+  overflow: hidden;
+}
+.nav-items li {
+  display: block;
+  width: 100%;
+  background: none;
+  transition: background .2s ease-in-out;
+  -webkit-transition: background .2s ease-in-out;
+  -moz-transition: background .2s ease-in-out;
+  -o-transition: background .2s ease-in-out;
+}
+.nav-items li:hover {
+  background: #1e1e1e;
+}
+.nav-items li a {
+  padding-right: 15px;
+  color: yellow;
+  font-family: 'Open Sans', arial, sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 2.2rem;
+  text-transform: none;
+}
+
 @media screen and (min-width: 768px) {
-  nav.navbar {
-    position: fixed;
-    height: 100%;
-    z-index: 100;
+  nav {
     width: 75px;
-    background: #1e1e1e;
-  }
-  .navbar-header {
     height: 100%;
+    background: #1e1e1e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: left;
+    padding: 0;
   }
-  .navbar-header > button {
-    display: block;
-    position: absolute;
+  .navbar-head {
+    background: #1e1e1e;
+    position: relative;
+    height: 100%;
+    width: 75px;
+  }
+  .nav-logo {
+    margin: 15px 20px;
+  }
+  .ham {
     top: 50%;
+    left: 15%;
+    height: 35px;
+    padding-top: 17px;
   }
-  .navbar-header > button .icon-bar {
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
+  .ham:hover {
+    background: #000000;
   }
-  .navbardiv.collapse .in {
-    display: block;
+  .navbar-icon {
+    margin-top: 0;
+    transform: rotate(90deg);
+  }
+  .ham li:nth-child(2) {
+    margin-top: -8px;
+  }
+  .ham li:nth-child(1) {
+    margin-left: 10px;
+  }
+
+  /* navbar links */
+  .nav {
     background: #1e1e1e;
+    width: 75px;
     height: 100%;
-    width: 150px;
   }
-  .navbar-nav {
-    position: absolute;
-    right: 0;
-    bottom: 25px;
+  .nav-items {
+    top: 50%;
+    right: 10px;
+  }
+  .nav-items li a {
+    padding: 0;
+    margin: 0;
+  }
+  .active {
+    color: #fff;
+    background: #000;
   }
 }
