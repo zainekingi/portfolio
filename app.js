@@ -51,6 +51,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Set Body-Parser to use JSON.
 app.use(bodyP.json());
 
+// Passport Middleware
+app.use(passport.initialize()); // Passport initialize.
+app.use(passport.session()); // Passport session.
+
 /* ----------- END: Middleware config --------- */
 
 /* ----------------------------------------------
@@ -58,6 +62,11 @@ app.use(bodyP.json());
  * ============================================= */
 // Index route.
 app.get('/', (req, res) => {
+  res.send('Invalid Endpoint');
+});
+
+// About me route.
+app.get('/about', (req, res) => {
   res.send('Invalid Endpoint');
 });
 
