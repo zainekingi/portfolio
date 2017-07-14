@@ -383,7 +383,7 @@ body {
   height: 35px;
   line-height: 0;
   border-radius: 0;
-  padding: 5%;
+  padding: 25px;
   margin: auto;
   text-transform: none;
   border: 1px solid;
@@ -468,7 +468,7 @@ body {
       }
 
     .zk-btn {
-      margin: 0;
+      margin: 25px 0;
     }
 }
 
