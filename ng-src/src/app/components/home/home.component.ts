@@ -13,7 +13,10 @@ export class HomeComponent implements OnInit {
 
     window.onscroll = function() {
 
-      var c = document.querySelectorAll('.section, .skill-item, .hero-text');
+      // Get the clients window height.
+      var wnH = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+
+      var c = document.querySelectorAll('.section, .skill-item');
 
       // Loop through all the logos.
       for (var i = 0; i < c.length; i++) {
@@ -24,7 +27,7 @@ export class HomeComponent implements OnInit {
         // Get the image elements offset top position.
         var vpOffset = c[i].getBoundingClientRect();
 
-        if(vpOffset.top < 500) {
+        if(vpOffset.top < wnH) {
 
           // Show the element
           c[i].classList.remove('opacity-0', 'slide-down');
