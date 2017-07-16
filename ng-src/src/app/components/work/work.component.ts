@@ -13,6 +13,9 @@ export class WorkComponent implements OnInit {
 
     window.onscroll = function() {
 
+      // Get the clients window height.
+      var wnH = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+
       var c = document.querySelectorAll('.wrk-component, .img-container');
 
       // Loop through all the logos.
@@ -25,7 +28,7 @@ export class WorkComponent implements OnInit {
         var vpOffset = c[i].getBoundingClientRect();
 
         // Check the parent containers offset top position.
-        if (vpOffset.top < 600) {
+        if (vpOffset.top < wnH) {
 
           // Show the element
           c[i].classList.remove('opacity-0', 'slide-down');
