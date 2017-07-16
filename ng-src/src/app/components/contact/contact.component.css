@@ -1,0 +1,31 @@
+#contact-form {
+  padding: 25px;
+}
+.form-group {
+  position: relative;
+}
+.form-control {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+label, input, textarea {
+  display: inline;
+}
+label {
+  position: absolute;
+  bottom: 30px;
+}
+label[for="message"] {
+  bottom: 35px;
+}
+input, textarea {
+  width: 100%;
+  background: #1e1e1e;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  padding-left: 100px;
+  margin: 0 auto 25px;
+  color: #ffffff;
+}
+
