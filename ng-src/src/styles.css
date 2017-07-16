@@ -39,7 +39,7 @@ ul, ol, li {
   .top-section {
     display: block;
     background: #000;
-    height: 100px;
+    height: 200px;
     margin: 0;
     padding: 25px 10px;
   }
@@ -70,8 +70,13 @@ ul, ol, li {
     .credits {
       width: 100%;
     }
+  .skill-container {
+    column-count: 1;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    -ms-grid-columns: 1;
+  }
     .skill-item {
-      width: 60%;
       margin: 25px auto 50px;
       text-align: center;
     }
@@ -96,6 +101,9 @@ ul, ol, li {
 .yellow {
   background: #e4ff00;
 }
+
+
+
 
 /* UI elements */
 /* Text border UI styles */
@@ -122,6 +130,18 @@ ul, ol, li {
 .border-yellow {
   border-color: #e4ff00;
 }
+
+
+/* Icon styling */
+.icon {
+  height: 100px;
+}
+
+
+/* Element positioning utility classes */
+
+
+
 /* Animation helper classes */
 /* Element fade-in */
 .fade-in {
@@ -434,14 +454,14 @@ opacity-4 {
 
 /* Typography */
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Avenir", "Open Sans", Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 100;
   color: #444;
   line-height: 2.4rem;
 }
 .quote {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Avenir", "Open Sans", Arial, sans-serif;
   font-size: 3.2rem;
   font-style: italic;
   font-weight: lighter;
@@ -474,7 +494,8 @@ body {
   font-size: 2rem;
 }
 .heading {
-  font-family: "Open Sans", Arial, sans-serif;
+  margin-top: 50px;
+  font-family: "Avenir", "Open Sans", Arial, sans-serif;
   font-size: 3rem;
   color: #e4ff00;
 }
@@ -510,6 +531,7 @@ body {
 .text-indent-15 {
   text-indent: 15px;
 }
+
 
 /* Font sizes */
 .font-05 {
@@ -696,6 +718,10 @@ body {
 
     }
 
+      .heading {
+        margin-top: 0;
+      }
+
     /* Work components */
     .wrk-component {
       overflow: hidden;
@@ -707,11 +733,15 @@ body {
           /*height: 100%;*/
         }
 
-    .skill-item {
-      width: 25%;
-      margin-left: 7%;
-      float: left;
+    .skill-container {
+      column-count: 3;
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      -ms-grid-columns: 3;
     }
+      .skill-item {
+        display: inline-block;
+      }
 
     .logo-container {
       column-count: 3;
