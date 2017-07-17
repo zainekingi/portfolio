@@ -11,7 +11,13 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
-    window.onscroll = function() {
+    var s = false;
+
+    window.onscroll = onScroll;
+
+    function onScroll() {
+
+      s = true;
 
       // Get the clients window height.
       var wnH = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
@@ -36,7 +42,14 @@ export class HomeComponent implements OnInit {
           c[i].classList.add('fade-in', 'slide-up');
         }
       }
-    }; /* END: window onscroll method */
+    }; /* END: onScroll method */
+
+    //  Set onScroll to fire every 1000ms.
+    setInterval(function() {
+      if(s) {
+        s = false;
+      }
+    }, 1000);
 
   }
 
