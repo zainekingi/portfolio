@@ -14,7 +14,7 @@ export class NavbarComponent implements OnInit {
     var navLnks = document.getElementsByClassName('nav')[0];
     var count = 75;
     var isOpen;
-    var vpWidth;
+    var vpWidth = window.innerWidth;
 
     window.addEventListener('resize', function() {
       vpWidth = window.innerWidth;
