@@ -23,7 +23,7 @@ export class AboutComponent implements OnInit {
       var wnH = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
 
 
-      var c = document.querySelectorAll('.section, .skill-item, .company-logo');
+      var c = document.querySelectorAll('.section, .company-logo');
 
       // Loop through all the logos.
       for (var i = 0; i < c.length; i++) {

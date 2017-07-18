@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
       // Get the clients window height.
       var wnH = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
 
-      var c = document.querySelectorAll('.section, .skill-item');
+      var c = document.querySelectorAll('.section');
 
       // Loop through all the logos.
       for (var i = 0; i < c.length; i++) {
