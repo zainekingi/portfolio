@@ -26,7 +26,7 @@ function fadeInOut() {
   // Get the clients window height.
   var wnH = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
 
-  var c = document.querySelectorAll('.section, .company-logo');
+  var c = document.querySelectorAll('.section, .company-logo, .wrk-component, .img-container');
 
   // Loop through all elements array.
   for (var i = 0; i < c.length; i++) {
