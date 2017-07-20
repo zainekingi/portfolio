@@ -11,6 +11,8 @@ import { AboutComponent } from './components/about/about.component';
 import { WorkComponent } from './components/work/work.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { TcsComponent } from './components/work/tcs/tcs.component';
+import { SchoolListComponent } from './components/work/school-list/school-list.component';
 
 
 // Application routes array.
@@ -18,7 +20,9 @@ var appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'work', component: WorkComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'contact', component: ContactComponent },
+  { path: 'tcs', component: TcsComponent},
+  { path: 'school-list', component: SchoolListComponent}
   ];
 
 @NgModule({
@@ -30,6 +34,8 @@ var appRoutes: Routes = [
     WorkComponent,
     ContactComponent,
     FooterComponent,
+    TcsComponent,
+    SchoolListComponent,
   ],
   imports: [
     RouterModule.forRoot (appRoutes),
