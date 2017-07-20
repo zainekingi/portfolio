@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  public height: Number;
+
   constructor() { }
 
   ngOnInit() {
+    var vpH = window.innerHeight;
+    this.height = vpH;
   }
 
 }
