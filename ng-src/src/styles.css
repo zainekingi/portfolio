@@ -38,7 +38,6 @@ ul, ol, li {
 }
   .top-section {
     display: block;
-    background: #000;
     height: 200px;
     margin: 0;
     padding: 25px 10px;
@@ -47,7 +46,7 @@ ul, ol, li {
   .section {
     display: block;
     height: auto;
-    padding: 25px 0;
+    padding: 0;
     position: relative; /* to position the borders */
   }
 
@@ -333,7 +332,7 @@ opacity-4 {
 
 /* Hero image component */
 .hero-img-container {
-  height: 500px;
+height: 500px;
 }
 .rose-img-bg {
   background-image: url("/assets/imgs/rose_bud_thumb.jpg");
@@ -392,7 +391,6 @@ opacity-4 {
 .wrk-component {
   overflow: hidden;
   position: relative;
-  text-align: center;
   height: 100%;
 }
   .wrk-text {
@@ -401,7 +399,7 @@ opacity-4 {
   }
   .img-container {
     overflow: hidden;
-    height: 250px;
+    height: 500px;
     display: block;
     margin: 50px auto 0;
     padding: 0;
@@ -410,11 +408,8 @@ opacity-4 {
       margin: 0 auto;
       height: 100%;
     }
-    .wrk-component span {
-      display: block;
-      line-height: 4rem;
-    }
-    .wrk-component span:after {
+
+    .wrk-title:after {
       content: " /";
       font-size: 3rem;
     }
@@ -436,6 +431,21 @@ opacity-4 {
 }
 .overlay-50 {
   margin-top: -50px;
+}
+.overlay-75 {
+  margin-top: -75px;
+}
+.overlay-100 {
+  margin-top: -100px;
+}
+.mar-top-5 {
+  margin-top: 5px;
+}
+.mar-top-10 {
+   margin-top: 10px;
+ }
+.mar-top-15 {
+  margin-top: 15px;
 }
 .mar-top-25 {
   margin-top: 25px;
@@ -485,9 +495,6 @@ body {
   content: "~ ";
   font-size: 2rem;
 }
-.list {
-
-}
 .list:before {
   content: "- ";
   font-size: 2rem;
@@ -496,7 +503,7 @@ body {
   margin-top: 50px;
   font-family: "Avenir", "Open Sans", Arial, sans-serif;
   font-size: 3rem;
-  color: #e4ff00;
+  /*color: #e4ff00;*/
 }
 .section-heading {
   display: block;
@@ -600,6 +607,66 @@ body {
   font-size: 3rem;
 }
 
+
+/* Line heights */
+.line-0-5 {
+  line-height: .5rem;
+}
+.line-1 {
+  line-height: 1rem;
+}
+.line-1-5 {
+  line-height: 1.5rem;
+}
+.line-1-6 {
+   line-height: 1.6rem;
+ }
+.line-1-7 {
+  line-height: 1.7rem;
+}
+.line-1-8 {
+  line-height: 1.8rem;
+}
+.line-1-9 {
+  line-height: 1.9rem;
+}
+.line-2 {
+  line-height: 2rem;
+}
+.line-2-1 {
+  line-height: 2.1rem;
+}
+.line-2-2 {
+  line-height: 2.2rem;
+}
+.line-2-3 {
+  line-height: 2.3rem;
+}
+.line-2-4 {
+  line-height: 2.4rem;
+}
+.line-2-5 {
+  line-height: 2.5rem;
+}
+.line-2-6 {
+  line-height: 2.6rem;
+}
+.line-2-7 {
+  line-height: 2.7rem;
+}
+.line-2-8 {
+  line-height: 2.8rem;
+}
+.line-2-9 {
+  line-height: 2.9rem;
+}
+.line-3 {
+  line-height: 3rem;
+}
+
+
+
+
 /* Font weights */
 .font-bold {
   font-weight: bold;
@@ -669,7 +736,7 @@ body {
   line-height: 0;
   border-radius: 0;
   padding: 25px;
-  margin: auto;
+  margin: 5% auto;
   text-transform: none;
   border: 1px solid;
   text-align: center;
@@ -688,13 +755,30 @@ body {
 }
 
 .zk-btn-prim-inverse:hover {
+  text-decoration: none;
   background: #fff;
   color: #444;
 }
 
 .zk-btn-prim:hover {
+  text-decoration: none;
   background: #444;
   color: #fff;
+}
+
+.scroll-y {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+.scroll-y:hover {
+
 }
 
 /* =============================
@@ -721,17 +805,6 @@ body {
         margin-top: 0;
       }
 
-    /* Work components */
-    .wrk-component {
-      overflow: hidden;
-    }
-      .img-container {
-        height: 70%;
-      }
-        .wrk-component img {
-          /*height: 100%;*/
-        }
-
     .skill-container {
       column-count: 3;
       -webkit-column-count: 3;
@@ -752,8 +825,10 @@ body {
       width: 75%;
     }
 
+    /* Work components */
     .wrk-component {
       text-align: left;
+      overflow: hidden;
     }
       .img-container {
         height: 500px;
