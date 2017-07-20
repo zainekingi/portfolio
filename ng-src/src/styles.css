@@ -333,7 +333,7 @@ opacity-4 {
 
 /* Hero image component */
 .hero-img-container {
-  height: 500px;
+height: 500px;
 }
 .rose-img-bg {
   background-image: url("/assets/imgs/rose_bud_thumb.jpg");
@@ -401,7 +401,7 @@ opacity-4 {
   }
   .img-container {
     overflow: hidden;
-    height: 250px;
+    height: 500px;
     display: block;
     margin: 50px auto 0;
     padding: 0;
@@ -410,11 +410,8 @@ opacity-4 {
       margin: 0 auto;
       height: 100%;
     }
-    .wrk-component span {
-      display: block;
-      line-height: 4rem;
-    }
-    .wrk-component span:after {
+
+    .wrk-title:after {
       content: " /";
       font-size: 3rem;
     }
@@ -484,9 +481,6 @@ body {
 .credits:before {
   content: "~ ";
   font-size: 2rem;
-}
-.list {
-
 }
 .list:before {
   content: "- ";
@@ -599,6 +593,66 @@ body {
 .font-3 {
   font-size: 3rem;
 }
+
+
+/* Line heights */
+.line-0-5 {
+  line-height: .5rem;
+}
+.line-1 {
+  line-height: 1rem;
+}
+.line-1-5 {
+  line-height: 1.5rem;
+}
+.line-1-6 {
+   line-height: 1.6rem;
+ }
+.line-1-7 {
+  line-height: 1.7rem;
+}
+.line-1-8 {
+  line-height: 1.8rem;
+}
+.line-1-9 {
+  line-height: 1.9rem;
+}
+.line-2 {
+  line-height: 2rem;
+}
+.line-2-1 {
+  line-height: 2.1rem;
+}
+.line-2-2 {
+  line-height: 2.2rem;
+}
+.line-2-3 {
+  line-height: 2.3rem;
+}
+.line-2-4 {
+  line-height: 2.4rem;
+}
+.line-2-5 {
+  line-height: 2.5rem;
+}
+.line-2-6 {
+  line-height: 2.6rem;
+}
+.line-2-7 {
+  line-height: 2.7rem;
+}
+.line-2-8 {
+  line-height: 2.8rem;
+}
+.line-2-9 {
+  line-height: 2.9rem;
+}
+.line-3 {
+  line-height: 3rem;
+}
+
+
+
 
 /* Font weights */
 .font-bold {
