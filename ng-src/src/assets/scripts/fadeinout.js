@@ -53,4 +53,4 @@ setInterval(function() {
   if(s) {
     s = false;
   }
-}, 1000);
+}, 500);
