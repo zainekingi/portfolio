@@ -128,6 +128,9 @@ ul, ol, li {
 .border-yellow {
   border-color: #e4ff00;
 }
+.hr {
+  border-top: 1px solid #ffffff;
+}
 
 
 /* Icon styling */
@@ -332,7 +335,16 @@ opacity-4 {
 
 /* Hero image component */
 .hero-img-container {
-height: 500px;
+  height: 500px;
+}
+.hero-overlay {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: rgba(0,0,0,0.2);
+  transition: background-color ease-in-out .2s;
+  -webkit-transition: background-color ease-in-out .2s;
+  -moz-transition: background-color ease-in-out .2s;
 }
 .rose-img-bg {
   background-image: url("/assets/imgs/rose_bud_thumb.jpg");
@@ -343,6 +355,11 @@ height: 500px;
   position: absolute;
   width: 60%;
 }
+  .hero-text h1 {
+    font-family: Times New Roman, serif;
+    font-size: 7rem;
+    font-weight: 100;
+  }
 .text-top {
   top: 0;
 }
