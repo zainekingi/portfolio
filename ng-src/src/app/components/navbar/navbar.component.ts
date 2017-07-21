@@ -38,7 +38,7 @@ export class NavbarComponent implements OnInit {
               clearInterval(openFn);
             }
           }
-        }, .1);
+        }, 15);
         isOpen = true;
       } else {
         var closeFn = setInterval(function() {
@@ -55,7 +55,7 @@ export class NavbarComponent implements OnInit {
               clearInterval(closeFn);
             }
           }
-        }, .1);
+        }, 15);
         isOpen = false;
       }
     }
