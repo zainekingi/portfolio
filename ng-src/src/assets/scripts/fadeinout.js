@@ -48,9 +48,9 @@ function fadeInOut() {
   }
 }; /* END: onScroll method */
 
-//  Set onScroll to fire every 1000ms.
+//  Set onScroll to fire every 15ms.
 setInterval(function() {
   if(s) {
     s = false;
   }
-}, 500);
+}, 15);
