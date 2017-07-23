@@ -339,6 +339,8 @@ opacity-4 {
   display: block;
   position: relative;
   width: 100%;
+  height: 100%;
+  min-height: 500px;
   background-color: rgba(0,0,0,0.4);
   transition: background-color ease-in-out .2s;
   -webkit-transition: background-color ease-in-out .2s;
@@ -412,14 +414,14 @@ opacity-4 {
   overflow: hidden;
   position: relative;
   height: 100%;
+  padding: 0;
 }
   .wrk-text {
-    margin-top: 15%;
-    padding: 25px 0;
+    padding: 15% 25px 0;
   }
   .img-container {
     overflow: hidden;
-    height: 500px;
+    height: 350px;
     display: block;
     margin: 50px auto 0;
     padding: 0;
@@ -429,8 +431,7 @@ opacity-4 {
       height: 100%;
     }
     .users-bg {
-      background: url("assets/imgs/users.jpg") center no-repeat;
-      height: 100%;
+      background-image: url("assets/imgs/users.jpg");
     }
 
     .wrk-title:after {
@@ -865,7 +866,7 @@ body {
         margin: 0;
       }
       .wrk-text {
-        margin-top: 15%;
+        padding-top: 10%;
       }
 
     .zk-btn {
@@ -874,5 +875,6 @@ body {
 }
 
 @media screen and (min-width: 988px) {
+
 
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Directive, ElementRef, Renderer } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-tcs',
@@ -6,25 +6,19 @@ import { Component, OnInit, Directive, ElementRef, Renderer } from '@angular/cor
   styleUrls: ['./tcs.component.css']
 })
 
-@Directive({
-  selector: '[bgImage]'
-})
 export class TcsComponent implements OnInit {
 
-  constructor(
+  public height: Number;
 
-    public el: ElementRef,
-    public renderer: Renderer
-
-  ) {
-
-  var height = this.el.nativeElement.style.height;
-  console.log();
-
-}
+  constructor() {}
 
   ngOnInit(){
-
+    this.height = this.overlayContainer.nativeElement.offsetHeight;
+    //console.log(this.height);
   }
 
+  @ViewChild('overlayContainer')
+  overlayContainer: ElementRef;
+  @ViewChild('imgOverlay')
+  imgOverlay: ElementRef;
 }
