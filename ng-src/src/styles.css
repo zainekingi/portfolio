@@ -358,7 +358,7 @@ opacity-4 {
 .hero-text {
   display: block;
   position: absolute;
-  width: 60%;
+  width: 90%;
 }
   .hero-text h1 {
     font-family: Times New Roman, serif;
@@ -831,6 +831,11 @@ body {
     .section {
 
     }
+
+      /* Hero component styling */
+      .hero-text {
+        width: 75%;
+      }
 
       .heading {
         margin-top: 0;
