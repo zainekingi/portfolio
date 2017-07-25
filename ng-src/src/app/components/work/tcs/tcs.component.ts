@@ -8,17 +8,7 @@ import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 
 export class TcsComponent implements OnInit {
 
-  public height: Number;
-
   constructor() {}
 
-  ngOnInit(){
-    this.height = this.overlayContainer.nativeElement.offsetHeight;
-    //console.log(this.height);
-  }
-
-  @ViewChild('overlayContainer')
-  overlayContainer: ElementRef;
-  @ViewChild('imgOverlay')
-  imgOverlay: ElementRef;
+  ngOnInit(){}
 }

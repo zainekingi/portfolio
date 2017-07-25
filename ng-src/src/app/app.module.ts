@@ -21,8 +21,8 @@ var appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'work', component: WorkComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'tcs', component: TcsComponent},
-  { path: 'school-list', component: SchoolListComponent}
+  { path: 'work/tcs', component: TcsComponent },
+  { path: 'work/school-list', component: SchoolListComponent }
   ];
 
 @NgModule({
