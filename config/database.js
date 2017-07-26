@@ -6,12 +6,17 @@
  *           configuration to the ZK Design
  *           database.
  *  -----------------------------------------------
- *   CHANGE LOG
+*            CHANGE LOG
  *  ...............................................
  *
  *  -------------------------------------------- */
 
  module.exports = {
-   database: 'mongodb://localhost:27017/zk-design',
+   database: 'mongodb://zaine:zaine_admin@ds157521.mlab.com:57521/zk-design',
    secret: 'theBacksoon12'
  }
+
+/* ======================================================
+ Other database settings.
+ mongodb://zaine:zaine_admin@ds157521.mlab.com:57521/zk-design
+ ------------------------------------------------------ */
