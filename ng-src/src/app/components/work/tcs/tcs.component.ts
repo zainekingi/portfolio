@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import '../../../../assets/scripts/main.js';
-declare var slider: any;
+
+// declare var initSlider: any;
 
 @Component({
   selector: 'app-tcs',
@@ -12,12 +12,10 @@ export class TcsComponent implements OnInit {
 
   constructor() {}
 
+
   ngOnInit(){
-
-    (function() {
-      new slider('slider');
-    })();
-
+    // initSlider('slider');
   }
+
 
 }

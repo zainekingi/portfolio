@@ -427,10 +427,12 @@ opacity-4 {
     padding: 0;
   }
   #slider {
+    height: 100%;
     position: relative;
   }
-    .img-container > img {
+    .img-container > img, #slider > img {
       margin: 0;
+      padding: 0;
       height: 100%;
     }
 
