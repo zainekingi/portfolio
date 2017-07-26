@@ -73,7 +73,8 @@ app.get('/about', (req, res) => {
 /* ------------- END: Routes config ------------ */
 
 // Set the port.
-var port = 3000;
+// var port = 3000; // localhost port setting.
+var port = process.env.PORT || 8080; // Heroku deployment setting.
 
 // Set application to listen on port.
 app.listen(port, () => { console.log('Server running on ' + port); });
