@@ -426,10 +426,14 @@ opacity-4 {
     margin: 50px auto 0;
     padding: 0;
   }
+  #slider {
+    position: relative;
+  }
     .img-container > img {
-      margin: 0 auto;
+      margin: 0;
       height: 100%;
     }
+
     .users-bg {
       background-image: url("assets/imgs/users.jpg");
     }
