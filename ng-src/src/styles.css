@@ -830,15 +830,6 @@ body {
 
       /* Background images */
 
-      /* Parallax utility class */
-      .parallax {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-      }
-
       .hero-img-bg {
         background: url("/assets/imgs/me-mobile-min.jpg") center;
       }
@@ -896,6 +887,16 @@ body {
 @media screen and (min-width: 988px) {
 
   /* Background images */
+
+  /* Parallax utility class */
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
   .hero-img-bg {
     background-image: url("/assets/imgs/me-min.jpg");
   }
