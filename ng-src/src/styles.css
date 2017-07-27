@@ -830,19 +830,11 @@ body {
 
       /* Background images */
 
-      /* Parallax utility class */
-      .parallax {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-      }
       .hero-img-bg {
-        background-image: url("/assets/imgs/me-mobile-min.jpg");
+        background: url("/assets/imgs/me-mobile-min.jpg") center;
       }
       .users-bg {
-        background-image: url("assets/imgs/users-mobile-min.jpg");
+        background: url("assets/imgs/users-mobile-min.jpg") center;
       }
 
       /* Hero component styling */
