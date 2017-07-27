@@ -351,8 +351,8 @@ opacity-4 {
 .hero-img-container {
   height: 500px;
 }
-.rose-img-bg {
-  background-image: url("/assets/imgs/rose_bud_thumb.jpg");
+.hero-img-bg {
+  background-image: url("/assets/imgs/me-mobile-min.jpg");
 }
 /* Hero image text overlay */
 .hero-text {
@@ -437,7 +437,7 @@ opacity-4 {
     }
 
     .users-bg {
-      background-image: url("assets/imgs/users.jpg");
+      background-image: url("assets/imgs/users-mobile-min.jpg");
     }
 
     .wrk-title:after {
@@ -837,6 +837,14 @@ body {
     .section {
 
     }
+
+      /* Background images */
+      .hero-img-bg {
+        background-image: url("/assets/imgs/me-min.jpg");
+      }
+      .users-bg {
+        background-image: url("assets/imgs/users-min.jpg");
+      }
 
       /* Hero component styling */
       .hero-text {
