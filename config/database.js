@@ -18,5 +18,9 @@
 
 /* ======================================================
  Other database settings.
+ Deployment:
  mongodb://zaine:zaine_admin@ds157521.mlab.com:57521/zk-design
+
+ Development:
+ mongodb://localhost:27017
  ------------------------------------------------------ */
