@@ -324,16 +324,6 @@ opacity-4 {
   opacity: 0;
 }
 
-
-/* Parallax utility class */
-.parallax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
 /* Image overlay */
 .img-overlay {
   display: block;
@@ -839,6 +829,15 @@ body {
     }
 
       /* Background images */
+
+      /* Parallax utility class */
+      .parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
       .hero-img-bg {
         background-image: url("/assets/imgs/me-min.jpg");
       }
