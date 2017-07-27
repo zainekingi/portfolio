@@ -351,9 +351,6 @@ opacity-4 {
 .hero-img-container {
   height: 500px;
 }
-.hero-img-bg {
-  background-image: url("/assets/imgs/me-mobile-min.jpg");
-}
 /* Hero image text overlay */
 .hero-text {
   display: block;
@@ -384,6 +381,13 @@ opacity-4 {
   right: 0;
 }
 
+/* Background images */
+.hero-img-bg {
+  background: url("/assets/imgs/me-mobile-min.jpg") center;
+}
+.users-bg {
+  background: url("assets/imgs/users-mobile-min.jpg") center;
+}
 
 /* Background blur components */
 .bg-blur-white, .bg-blur-black {
@@ -434,10 +438,6 @@ opacity-4 {
       margin: 0;
       padding: 0;
       height: 100%;
-    }
-
-    .users-bg {
-      background-image: url("assets/imgs/users-mobile-min.jpg");
     }
 
     .wrk-title:after {
