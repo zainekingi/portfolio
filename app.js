@@ -64,17 +64,15 @@ app.use(passport.session()); // Passport session.
 app.get('/', (req, res) => {
   res.send('Invalid Endpoint');
 });
-
-// About me route.
-app.get('/about', (req, res) => {
-  res.send('Invalid Endpoint');
-});
-
 /* ------------- END: Routes config ------------ */
 
 // Set the port.
 // var port = 3000; // localhost port setting.
 var port = process.env.PORT || 8080; // Heroku deployment setting.
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/index.html'));
+});
 
 // Set application to listen on port.
 app.listen(port, () => { console.log('Server running on ' + port); });
