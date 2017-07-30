@@ -14,10 +14,10 @@ label, input, textarea {
 }
 label {
   position: absolute;
-  bottom: 30px;
+  bottom: 35px;
 }
 label[for="message"] {
-  bottom: 35px;
+  bottom: 40px;
 }
 input, textarea {
   width: 100%;
@@ -36,3 +36,16 @@ input, textarea {
   background: grey;
 }
 
+/* NG classes */
+.ng-invalid:not(form) {
+
+}
+.ng-valid {
+
+}
+.ng-pristine {
+
+}
+.ng-dirty {
+
+}
