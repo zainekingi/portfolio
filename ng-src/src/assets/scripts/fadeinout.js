@@ -26,7 +26,7 @@ function fadeInOut() {
   // Get the clients window height.
   var wnH = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
 
-  var c = document.querySelectorAll('.section, .company-logo, .wrk-component, .img-container');
+  var c = document.querySelectorAll('.section, .wrk-component');
 
   // Loop through all elements array.
   for (var i = 0; i < c.length; i++) {
@@ -44,9 +44,12 @@ function fadeInOut() {
 
       // Fade element in.
       c[i].classList.add('fade-in', 'slide-up');
+
     }
+
   }
-}; /* END: onScroll method */
+
+} /* END: onScroll method */
 
 //  Set onScroll to fire every 15ms.
 setInterval(function() {
