@@ -1132,7 +1132,7 @@ body {
 
   .flash-message
   {
-    width: auto;
+    max-width: 25%;
     margin: 0;
     right: 5%;
   }
