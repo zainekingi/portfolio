@@ -91,6 +91,29 @@ ul, ol, li {
     }
 
 
+/* Form validation Flash Message styling */
+
+#grayOutDiv
+{
+  background-color: #333;
+  opacity: 0.7;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.flash-message
+{
+  z-index: 10000;
+  position: absolute;
+  top: 10%;
+  width: 70%;
+  margin: 0 15%;
+}
 
 
 /* Colours */
@@ -1103,6 +1126,16 @@ body {
     .zk-btn {
       margin: 25px 0;
     }
+
+
+  /* Form validation Flash Message styling */
+
+  .flash-message
+  {
+    width: auto;
+    margin: 0;
+    right: 5%;
+  }
 }
 
 @media screen and (min-width: 988px) {

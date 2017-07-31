@@ -5,54 +5,27 @@
 
   <!-- Contact form -->
   <div class="section charcoal overlay-25 col-sm-12 col-md-8 col-md-push-4">
-    <form id="contact-form" (ngSubmit)="checkForm()" novalidate>
+    <form id="contact-form" (ngSubmit)="cfSubmit()"  novalidate>
 
-      <div class="form-group" [ngClass]="{'has-danger': name.invalid && (name.dirty || name.touched), 'has-success': name.valid && (name.dirty || name.touched)}">
+      <div class="form-group">
         <label for="name" class="text-white font-light">Name</label>
-        <input type="text" name="name" required minlength="5" maxlength="25" id="name" class="form-control">
-
-        <div class="form-control-feedback" *ngIf="name.errors && (name.dirty || name.touched)">
-          <p *ngIf="name.errors.required">Name is required</p>
-        </div>
-
-        <!--
-          <pre>Valid? {{ contactForm.controls.name.valid }}</pre>
-          <pre>Dirty? {{ contactForm.controls.name.dirty }}</pre>
-        -->
+        <input type="text" name="name" required id="name" class="form-control" [(ngModel)]="name">
       </div><!-- / Name -->
 
-      <div class="form-group" [ngClass]="{'has-danger': email.invalid && (email.dirty || email.touched), 'has-success': email.valid && (email.dirty || email.touched)}">
+      <div class="form-group">
         <label for="email" class="text-white font-light">Email</label>
-        <input type="text" name="email" required id="email" class="form-control">
-
-        <div class="form-control-feedback" *ngIf="email.errors && (email.dirty || email.touched)">
-          <p *ngIf="email.errors.required">Email is required</p>
-          <p *ngIf="email.errors.pattern">Please enter a valid email</p>
-        </div>
-
-        <!--
-          <pre>Valid? {{ contactForm.controls.email.valid }}</pre>
-          <pre>Dirty? {{ contactForm.controls.email.dirty }}</pre>
-        -->
+        <input type="text" name="email" required id="email" class="form-control" [(ngModel)]="email">
       </div><!-- / Email -->
 
-      <div class="form-group" [ngClass]="{'has-danger': message.invalid && (message.dirty || message.touched), 'has-success': message.valid && (message.dirty || message.touched)}">
+      <div class="form-group">
         <label for="message" class="text-white font-light">Message</label>
-        <textarea name="message" id="message" required cols="30" rows="1" class="form-control"></textarea>
-        <div class="form-control-feedback" *ngIf="message.errors && (message.dirty || message.touched)">
-          <p *ngIf="message.errors.required">Message is required</p>
-        </div>
-
-        <!--
-          <pre>Valid? {{ contactForm.controls.message.valid }}</pre>
-          <pre>Dirty? {{ contactForm.controls.message.dirty }}</pre>
-        -->
+        <textarea name="message" id="message" required cols="30" rows="1" class="form-control" [(ngModel)]="message"></textarea>
       </div><!-- / Message -->
 
       <button class="zk-btn zk-btn-prim-inverse" type="submit">Get in touch</button>
     </form>
-    <!--<pre>{{contactForm.value | json}}</pre>-->
   </div>
+
 
   <!-- Map -->
   <!--<div id="map" class="clear" [style.top] = "height/2 + 'px'"></div> 78wym-mpw8y-tpy7n-jdkf9-66jxv -->

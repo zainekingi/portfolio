@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes} from '@angular/router';
 
@@ -13,6 +13,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TcsComponent } from './components/work/tcs/tcs.component';
 import { SchoolListComponent } from './components/work/school-list/school-list.component';
+import { ValidateService } from './services/validate.service';
+import { FlashMessagesModule } from 'angular2-flash-messages';
 
 
 // Application routes array.
@@ -41,9 +43,10 @@ var appRoutes: Routes = [
     RouterModule.forRoot (appRoutes),
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    FlashMessagesModule
   ],
-  providers: [],
+  providers: [ValidateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
