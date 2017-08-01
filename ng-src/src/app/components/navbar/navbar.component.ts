@@ -64,7 +64,7 @@ export class NavbarComponent implements OnInit {
     }
 
 
-    /* Method to close the navigation if a navigaion link is click. */
+    /* Method to close the navigation if a navigation link is click. */
 
     var lis = document.querySelectorAll('.nav-items li');
     for(var i = 0; i < lis.length; i ++) {
@@ -72,7 +72,7 @@ export class NavbarComponent implements OnInit {
         lis[i].addEventListener('click', function(){
 
           var closeNavFn = setInterval(function() {
-            if(vpWidth > 768) { // desktop
+            if(vpWidth > 767) { // desktop
               if(count > -300) {
                 closeNavDesk(navLnks);
               } else {
