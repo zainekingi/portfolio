@@ -28,7 +28,7 @@ export class NavbarComponent implements OnInit {
     function toggleNav(){
       if(!isOpen) {
         var openFn = setInterval(function() {
-          if(vpWidth > 768) { // desktop
+          if(vpWidth > 767) { // desktop
             if(count < 70) {
               openNavDesk(navLnks);
             } else {
@@ -45,7 +45,7 @@ export class NavbarComponent implements OnInit {
         isOpen = true;
       } else {
         var closeFn = setInterval(function() {
-          if(vpWidth > 768) { // desktop
+          if(vpWidth > 767) { // desktop
             if(count > -300) {
               closeNavDesk(navLnks);
             } else {
