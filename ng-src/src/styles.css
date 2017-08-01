@@ -1139,9 +1139,9 @@ body {
   }
 
   .hero-img-bg {
-    background-image: url("/assets/imgs/me-mobile-min.jpg");
+    background-image: url("/assets/imgs/me-min.jpg");
   }
   .users-bg {
-    background-image: url("assets/imgs/users-mobile-min.jpg");
+    background-image: url("assets/imgs/users-min.jpg");
   }
 }
