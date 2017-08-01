@@ -373,10 +373,7 @@ opacity-4 {
   width: 100%;
   height: 100%;
   min-height: 500px;
-  background-color: rgba(0,0,0,0.5);
-  transition: background-color ease-in-out .2s;
-  -webkit-transition: background-color ease-in-out .2s;
-  -moz-transition: background-color ease-in-out .2s;
+  background-color: rgba(0,0,0,0.3);
 }
 
 /* Hero image component */
@@ -1062,17 +1059,6 @@ body {
     padding-left: 75px;
   }
 
-      /* Background images */
-
-      .hero-img-bg {
-        background: url("/assets/imgs/me-mobile-min.jpg") center;
-      }
-      .users-bg {
-        background: url("assets/imgs/users-mobile-min.jpg") center;
-      }
-
-
-
       /* Hero component styling */
 
       .hero-text {
@@ -1153,9 +1139,9 @@ body {
   }
 
   .hero-img-bg {
-    background-image: url("/assets/imgs/me-min.jpg");
+    background-image: url("/assets/imgs/me-mobile-min.jpg");
   }
   .users-bg {
-    background-image: url("assets/imgs/users-min.jpg");
+    background-image: url("assets/imgs/users-mobile-min.jpg");
   }
 }
