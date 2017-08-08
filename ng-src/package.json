@@ -20,6 +20,7 @@
     "@angular/platform-browser": "^2.3.1",
     "@angular/platform-browser-dynamic": "^2.3.1",
     "@angular/router": "^3.3.1",
+    "angular-cli": "^1.0.0-beta.28.3",
     "angular2-flash-messages": "^1.0.8",
     "core-js": "^2.4.1",
     "npm": "^5.3.0",
@@ -28,10 +29,8 @@
     "zone.js": "^0.7.2"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "^2.3.1",
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.85",
-    "angular-cli": "^1.0.0-beta.22-1",
     "codelyzer": "~2.0.0-beta.1",
     "jasmine-core": "2.5.2",
     "jasmine-spec-reporter": "2.5.0",
