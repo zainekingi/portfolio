@@ -505,6 +505,16 @@ opacity-4 {
 
 
 
+/* Image collage container component */
+
+.collage {
+
+}
+  .collage > img {
+    width: 100%;
+  }
+
+
 /* Company logo component */
 
 .logo-container {
