@@ -15,6 +15,7 @@ import { TcsComponent } from './components/work/tcs/tcs.component';
 import { SchoolListComponent } from './components/work/school-list/school-list.component';
 import { ValidateService } from './services/validate.service';
 import { FlashMessagesModule } from 'angular2-flash-messages';
+import { PrintCopyComponent } from './components/work/print-copy/print-copy.component';
 
 
 // Application routes array.
@@ -24,7 +25,8 @@ var appRoutes: Routes = [
   { path: 'work', component: WorkComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'work/tcs', component: TcsComponent },
-  { path: 'work/school-list', component: SchoolListComponent }
+  { path: 'work/school-list', component: SchoolListComponent },
+  { path: 'work/print-copy', component: PrintCopyComponent }
   ];
 
 @NgModule({
@@ -38,6 +40,7 @@ var appRoutes: Routes = [
     FooterComponent,
     TcsComponent,
     SchoolListComponent,
+    PrintCopyComponent,
   ],
   imports: [
     RouterModule.forRoot (appRoutes),
