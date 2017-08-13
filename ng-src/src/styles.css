@@ -1,7 +1,7 @@
 /* =======================================================
     FILE:   STYLES.CSS
     AUTHOR: Zaine Kingi
-    VER:    1.0
+    VER:    1.0b
     DATE:   13-7-17
     DESC:   Global stylesheet for shared styles between
             components of the application.
@@ -11,6 +11,7 @@
     DATE:   VER:    CHANGES:
     ------------------------------------------------------
     13-7-17 1.0     Initial release.
+    13-8-17 1.0b    Add loader styles.
     ---------------------------------------------------- */
 /* Mobile first */
 
@@ -1035,19 +1036,14 @@ body {
   background: #222222;
   z-index: 1000;
 }
-
 #loader-wrapper .loader-section.section-left {
   left: 0;
 }
-
 #loader-wrapper .loader-section.section-right {
   right: 0;
 }
 #loader {
   z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
-}
-h1 {
-  color: #EEEEEE;
 }
 #content {
   margin: 0 auto;
@@ -1062,7 +1058,6 @@ h1 {
   -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
   transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
-
 .loaded #loader-wrapper .loader-section.section-right {
   -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
   -ms-transform: translateX(100%);  /* IE 9 */
