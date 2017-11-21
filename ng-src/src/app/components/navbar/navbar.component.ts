@@ -11,6 +11,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
 
+    var nav = document.getElementsByTagName('nav')[0];
     var ham = document.getElementsByClassName('ham')[0];
     var navLnks = document.getElementsByClassName('nav')[0];
     var count = -350;
@@ -99,11 +100,13 @@ export class NavbarComponent implements OnInit {
       ele.style.height = '100%';
       ele.style.width = '300px';
       ele.style.top = '0px';
+      nav.style.overflow = 'visible';
     }
 
     function closeNavDesk(ele) {
       count -= 15;
       ele.style.left = count + 'px';
+      nav.style.overflow = 'hidden';
     }
 
     function openNavMob(ele) {
@@ -112,11 +115,13 @@ export class NavbarComponent implements OnInit {
       ele.style.width = '100%';
       ele.style.height = '300px';
       ele.style.left = '0px';
+      nav.style.overflow = 'visible';
     }
 
     function closeNavMob(ele) {
       count -= 15;
       ele.style.top = count + 'px';
+      nav.style.overflow = 'hidden';
     }
   }
 

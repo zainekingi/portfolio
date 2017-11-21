@@ -2,6 +2,7 @@
   "compilerOptions": {
     "baseUrl": "",
     "declaration": false,
+    "noEmit": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "lib": ["es6", "dom"],
