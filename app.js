@@ -22,7 +22,7 @@ var express = require ('express'),
 /* -----------------------------------------------
 *   Database connection
 * ============================================= */
-mongoose.connect(config.database);
+mongoose.createConnection(config.database);
 
 mongoose.connection.on('connected', () => {
   // Console success message - remove for prod release.
@@ -75,4 +75,4 @@ app.get('*', (req, res) => {
 });
 
 // Set application to listen on port.
-app.listen(port, () => { console.log('Server running on ' + port); });
+app.listen(port, () => { console.log('Server running on ' + port) });
