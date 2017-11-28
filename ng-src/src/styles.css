@@ -94,7 +94,7 @@ ul, ol, li {
     .skill-icn {
       display: block;
       height: 100px;
-      margin: auto;
+      margin: auto auto 1rem;
     }
 
 
@@ -615,6 +615,9 @@ body {
   content: "~ ";
   font-size: 2rem;
 }
+.list {
+  margin-bottom: 1rem;
+}
 .list:before {
   content: "- ";
   font-size: 2rem;
@@ -1123,7 +1126,7 @@ body {
       }
 
     .section-heading h2 {
-      width: 40%;
+      width: 30%;
     }
 
 
