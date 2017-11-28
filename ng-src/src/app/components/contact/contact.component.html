@@ -3,74 +3,56 @@
     <div class="heading font-light text-yellow font-italic">Contact me.</div>
   </div><!-- /.top-section -->
 
-  <!-- Contact form -->
-  <div class="section charcoal overlay-25 col-sm-12 col-md-8 col-md-push-4">
-    <form id="contact-form" (ngSubmit)="cfSubmit()"  novalidate>
+  <div class="row d-flex flex-md-row-reverse">
+    <!-- Contact form -->
+    <div class="charcoal overlay-25 col-sm-12 col-md-8">
+      <form id="contact-form" (ngSubmit)="cfSubmit()"  novalidate>
 
-      <div class="form-group">
-        <label for="name" class="text-white font-light">Name</label>
-        <input type="text" name="name" required id="name" class="form-control" [(ngModel)]="name">
-      </div><!-- / Name -->
+        <div class="form-group">
+          <label for="name" class="text-white font-light">Name</label>
+          <input type="text" name="name" required id="name" class="form-control" [(ngModel)]="name">
+        </div><!-- / Name -->
 
-      <div class="form-group">
-        <label for="email" class="text-white font-light">Email</label>
-        <input type="text" name="email" required id="email" class="form-control" [(ngModel)]="email">
-      </div><!-- / Email -->
+        <div class="form-group">
+          <label for="email" class="text-white font-light">Email</label>
+          <input type="text" name="email" required id="email" class="form-control" [(ngModel)]="email">
+        </div><!-- / Email -->
 
-      <div class="form-group">
-        <label for="message" class="text-white font-light">Message</label>
-        <textarea name="message" id="message" required cols="30" rows="1" class="form-control" [(ngModel)]="message"></textarea>
-      </div><!-- / Message -->
+        <div class="form-group">
+          <label for="message" class="text-white font-light">Message</label>
+          <textarea name="message" id="message" required cols="30" rows="1" class="form-control" [(ngModel)]="message"></textarea>
+        </div><!-- / Message -->
 
-      <button class="zk-btn zk-btn-prim-inverse" type="submit">Get in touch</button>
-    </form>
-  </div>
+        <button class="zk-btn zk-btn-prim-inverse" type="submit">Get in touch</button>
+      </form>
+    </div>
 
+    <!-- More details -->
+    <div class="section col-sm-12 p-5">
+      <div class="row">
+        <!-- Office location -->
+        <div class="col-sm-12 col-md-6 text-left">
+          <img src="../../../assets/imgs/icons/location-icon.png" srcset="../../../assets/imgs/icons/location-icon.png 1x, ../../../assets/imgs/icons/location-icon@2x.png 2x, ../../../assets/imgs/icons/location-icon@3x.png 3x" alt="Office location" class="icon">
+          <h2>Office.</h2>
+          <p>
+            26 The Warehouse Way,<br>
+            Northcote,<br>
+            Auckland, 0629<br>
+            New Zealand
+          </p>
+        </div><!-- END: office details -->
 
-  <!-- Map -->
-  <!--<div id="map" class="clear" [style.top] = "height/2 + 'px'"></div> 78wym-mpw8y-tpy7n-jdkf9-66jxv -->
+        <!-- Phone numbers -->
+        <div class="col-sm-12 col-md-6 text-left">
+          <img src="../../../assets/imgs/icons/phone-icon.png" srcset="../../../assets/imgs/icons/phone-icon.png 1x, ../../../assets/imgs/icons/phone-icon@2x.png 2x, ../../../assets/imgs/icons/phone-icon@3x.png 3x" alt="Contact phone numbers" class="icon">
+          <h2>Drop us a line.</h2>
+          <p>
+            Office - +649 489-8900 ext. 96677<br>
+            Mobile - +6421-897337<br>
+          </p>
+        </div><!-- END: office details -->
+      </div><!-- /.row -->
+    </div><!-- /.section -->
+  </div><!-- /.row -->
 
-  <!-- More details -->
-  <div class="section col-sm-12 col-md-8 col-md-push-4 pad-35">
-    <!-- Office location -->
-    <div class="col-sm-12 col-md-6 text-center">
-      <img src="../../../assets/imgs/icons/location-icon.png" srcset="../../../assets/imgs/icons/location-icon.png 1x, ../../../assets/imgs/icons/location-icon@2x.png 2x, ../../../assets/imgs/icons/location-icon@3x.png 3x" alt="Office location" class="icon">
-      <h2>Office.</h2>
-      <p>
-        26 The Warehouse Way,<br>
-        Northcote,<br>
-        Auckland, 0629<br>
-        New Zealand
-      </p>
-    </div><!-- END: office details -->
-
-    <!-- Phone numbers -->
-    <div class="col-sm-12 col-md-6 text-center">
-      <img src="../../../assets/imgs/icons/phone-icon.png" srcset="../../../assets/imgs/icons/phone-icon.png 1x, ../../../assets/imgs/icons/phone-icon@2x.png 2x, ../../../assets/imgs/icons/phone-icon@3x.png 3x" alt="Contact phone numbers" class="icon">
-      <h2>Drop us a line.</h2>
-      <p>
-        Office - +649 489-8900 ext. 96677<br>
-        Mobile - +6421-897337<br>
-      </p>
-    </div><!-- END: office details -->
-
-  </div><!-- END: more details section. -->
 </div><!-- /.main-container -->
-
-
-<script type="text/javascript">
-  function initMap() {
-    var uluru = {lat: -25.363, lng: 131.044};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 4,
-      center: uluru
-    });
-    var marker = new google.maps.Marker({
-      position: uluru,
-      map: map
-    });
-  }
-</script>
-
-<!-- Google Maps API -->
-<!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=js?key=AIzaSyBWXNxa3yaYwz3DLJDLVkGvg1fuYGT1F7Q&callback=initMap"></script>-->

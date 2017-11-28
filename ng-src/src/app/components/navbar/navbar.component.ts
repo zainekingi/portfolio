@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  public height: number;
+
   constructor() { }
 
   ngOnInit() {
@@ -17,6 +19,8 @@ export class NavbarComponent implements OnInit {
     var count = -350;
     var isOpen;
     var vpWidth = window.innerWidth;
+    var vpHeight = window.innerHeight;
+    this.height =  vpHeight/2;
 
     window.addEventListener('resize', function() {
       vpWidth = window.innerWidth;
@@ -53,7 +57,7 @@ export class NavbarComponent implements OnInit {
               clearInterval(closeFn);
             }
           } else {
-            if(count > -300) {  // mobile
+            if(count > -225) {  // mobile
               closeNavMob(navLnks);
             } else {
               clearInterval(closeFn);
@@ -80,7 +84,7 @@ export class NavbarComponent implements OnInit {
                 clearInterval(closeNavFn);
               }
             } else {
-              if(count > -300) {  // mobile
+              if(count > -225) {  // mobile
                 closeNavMob(navLnks);
               } else {
                 clearInterval(closeNavFn);
@@ -113,7 +117,7 @@ export class NavbarComponent implements OnInit {
       count += 15;
       ele.style.top = count + 'px';
       ele.style.width = '100%';
-      ele.style.height = '300px';
+      ele.style.height = '225px';
       ele.style.left = '0px';
       nav.style.overflow = 'visible';
     }

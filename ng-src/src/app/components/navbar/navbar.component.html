@@ -1,17 +1,16 @@
 <nav>
   <div class="navbar navbar-head">
-    <a [routerLink] = "['/']"><img src="../../../assets/imgs/zk-logo/zk-logo.png" alt="logo" class="nav-logo"></a>
-    <ul class="ham">
+    <a [routerLink] = "['/']"><img src="../../../assets/imgs/zk-logo/zk-logo.png" srcset="../../../assets/imgs/zk-logo/zk-logo.png 1x, ../../../assets/imgs/zk-logo/zk-logo@2x.png 2x, ../../../assets/imgs/zk-logo/zk-logo@3x.png 3x"  alt="logo" class="nav-logo"></a>
+    <ul class="ham m-md-auto">
       <li><span class="navbar-icon"></span></li>
       <li><span class="navbar-icon"></span></li>
     </ul>
   </div>
   <div class="nav">
-    <ul class="nav-items">
-      <li [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink] = "['/']">Start here.</a></li>
-      <li [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink] = "['/about']">About me.</a></li>
-      <li [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink] = "['/work']">Work.</a></li>
-      <li [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink] = "['/contact']">Contact me.</a></li>
+    <ul class="nav-items my-md-auto">
+      <li [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink] = "['/about']" class="mr-md-4">About me.</a></li>
+      <li [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink] = "['/work']" class="mr-md-4">Work.</a></li>
+      <li [routerLinkActive] = "['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink] = "['/contact']" class="mr-md-4">Contact me.</a></li>
     </ul>
   </div>
 </nav>
