@@ -60,7 +60,7 @@ ul, ol, li {
 
   .section-heading {
     width: 100%;
-    margin: 75px 0;
+    margin: 0;
     border-top: 1px solid #444;
   }
    .section-heading h2 {
@@ -509,9 +509,18 @@ opacity-4 {
       height: 100%;
     }
 
+    /* Work component text styles. */
+    .wrk-title {
+      font-size: 2.2rem;
+      font-style: italic;
+    }
     .wrk-title:after {
       content: " /";
-      font-size: 3rem;
+      font-size: 2.4rem;
+    }
+    .wrk-info {
+      font-size: 1.6rem;
+      margin-top: 15px;
     }
 
 
@@ -592,7 +601,7 @@ body {
 }
 .quote {
   font-family: "Avenir", sans-serif;
-  font-size: 3.2rem;
+  font-size: 2rem;
   font-style: italic;
   line-height: 3.2rem;
   word-wrap: break-word;
@@ -623,9 +632,9 @@ body {
   font-size: 2rem;
 }
 .heading {
-  margin-top: 50px;
+  margin-top: 75px;
   font-family: "Avenir", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .section-heading h2 {
   margin: -20px auto 0;
@@ -878,7 +887,7 @@ body {
   line-height: 0;
   border-radius: 0;
   padding: 25px;
-  margin: 5% auto;
+  margin: 5% 0;
   text-transform: none;
   border: 1px solid;
   text-align: center;
@@ -1121,10 +1130,6 @@ body {
         font-size: 2rem;
       }
 
-      .heading {
-        margin-top: 0;
-      }
-
     .section-heading h2 {
       width: 30%;
     }
@@ -1165,13 +1170,6 @@ body {
       .wrk-text {
         padding-top: 10%;
       }
-
-
-      /* Custom button styling */
-
-    .zk-btn {
-      margin: 25px 0;
-    }
 
 
   /* Form validation Flash Message styling */
